@@ -1,0 +1,5 @@
+Question = input("Have you been training? YES or NO ")
+if Question ==("yes"):
+    print("Trained: YES ")
+elif Question == ("no"):
+    print("Trained: NO ") 

@@ -1,0 +1,27 @@
+import csv
+
+
+with open("hr_system.txt") as hr_file:
+    for line in hr_file:
+        clean_line = line.strip()
+        parts = clean_line.split(" ")
+        
+        name = parts[0]
+        id_number = [1]
+        title = parts[2]
+        salary = float(parts[3])
+        
+        
+        
+        #print(f" Name: {name}, Title: {title} - {salary:.2f}")
+        
+        pay = salary /24
+        
+        if title.lower() == "engineer":
+            pay += 1000
+        
+        print(f"{name} (ID: {id_number}), {title} - ${pay:.2f}")
+        
+        
+        
+        
